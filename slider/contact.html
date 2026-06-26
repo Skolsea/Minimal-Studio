@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+
+	<!-- Basic Page Needs
+  ================================================== -->
+	<meta charset="utf-8">
+	<title>Selene | Creative HTML5 Portfolio Template</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+
+	<!-- Mobile Specific Metas
+  ================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<!-- Font
+  ================================================== -->
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800&amp;subset=latin,cyrillic-ext,greek-ext,greek,vietnamese,latin-ext,cyrillic' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Inconsolata:400,700&amp;subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Satisfy' rel='stylesheet' type='text/css'>
+	
+	<!-- Favicons
+	================================================== -->
+	<link rel="shortcut icon" href="favicon.png">
+	<link rel="apple-touch-icon" href="apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="apple-touch-icon-114x114.png">
+
+	<!-- CSS
+  ================================================== -->
+	<link rel="stylesheet" href="css/base.css"/>
+	<link rel="stylesheet" href="css/skeleton.css"/>
+	<link rel="stylesheet" href="css/layout.css"/>
+	<link rel="stylesheet" href="css/font-awesome.css"/>
+	<link rel="stylesheet" href="css/ionicons.css"/>
+	<link rel="stylesheet" href="css/animsition.min.css"/>
+	
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+  	
+
+</head>
+<body>
+
+<div class="animsition">
+	
+	<div class="nav-wrapper cbp-af-header">
+		<img class="logo" src="images/logo.png" alt="">
+	
+		<a href="#cd-nav" class="cd-nav-trigger">
+			Menu<span><!-- used to create the menu icon --></span>
+		</a> <!-- .cd-nav-trigger -->
+	</div>	
+	
+	<main>
+		
+		<section class="cd-section contact cd-selected">
+			
+			<div class="section section-padding-top-bottom-head">
+	
+				<div class="parallax-contact"></div>	
+				
+				<div class="container">	
+					<div class="sixteen columns">
+						<div class="section-head-text left">
+							<h2>contact</h2>
+							<p>Get in touch!</p>
+						</div>
+					</div>	
+				</div>
+			</div>
+			
+			<div class="section section-padding-top-bottom-same-wrapper white-background">						
+				<div class="container">	
+					<div class="sixteen columns">
+						<div class="section-head-text center">
+							<h4>HAVE A QUESTIONS?</h4>
+							<p>Get in touch!</p>
+						</div>
+					</div>
+					<div class="one-third column" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.3s">							
+						<div class="contact-block">																
+							<div class="text">				
+								<h5><span>&#xf4b8;</span> call us</h5>	
+								<p>+381 5 313 345</p>
+							</div>
+						</div>
+					</div>	
+					<div class="one-third column" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.3s">							
+						<div class="contact-block">							
+							<div class="text">				
+								<h5><span>&#xf2a6;</span> address</h5>
+								<p>86 Kralja Milutina, Bg, RS</p>
+							</div>
+						</div>
+					</div>
+					<div class="one-third column" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.3s">							
+						<div class="contact-block">					
+							<div class="text">				
+								<h5><span>&#xf422;</span> email</h5>
+								<p>support@selene.com</p>
+							</div>
+						</div>
+					</div>		
+				</div>	
+			</div>
+			
+			<div class="section section-padding-bottom white-background">						
+				<div class="container">	
+				
+					<div class="clear"></div>
+						
+					<form name="ajax-form" id="ajax-form" action="mail-it.php" method="post">
+						<div class="eight columns" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
+							<label for="name"> 
+								<span class="error" id="err-name">please enter name</span>
+							</label>
+							<input name="name" id="name" type="text"   placeholder="Your Name: *"/>
+						</div>
+						<div class="eight columns" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
+							<label for="email"> 
+								<span class="error" id="err-email">please enter e-mail</span>
+								<span class="error" id="err-emailvld">e-mail is not a valid format</span>
+							</label>
+							<input name="email" id="email" type="text"  placeholder="E-Mail: *"/>
+						</div>
+						<div class="sixteen columns" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
+							<label for="message"></label>
+							<textarea name="message" id="message" placeholder="Tell Us Everything"></textarea>
+						</div>
+						<div class="sixteen columns" data-scroll-reveal="enter bottom move 100px over 0.6s after 0.2s">
+							<div id="button-con"><button class="send_message chaffle" id="send" data-lang="en">submit</button></div>					
+						</div>
+						<div class="clear"></div>	
+						<div class="error text-align-center" id="err-form">There was a problem validating the form please check!</div>
+						<div class="error text-align-center" id="err-timedout">The connection to the server timed out!</div>
+						<div class="error" id="err-state"></div>
+					</form>	
+						
+					<div class="clear"></div>
+					<div id="ajaxsuccess">Successfully sent!!</div>
+					<div class="clear"></div>
+				
+				</div>	
+			</div>
+			
+			<div class="section">
+			
+				<div id="cd-google-map">
+					<div id="google-container"></div>
+					<div id="cd-zoom-in"></div>
+					<div id="cd-zoom-out"></div>
+					<address>86-90 Kralja Milutina<br>Belgrade 11000</address> 
+				</div>
+				
+			</div>
+			
+			<div class="section footer white-background">
+				<div class="container">		
+					<div class="sixteen columns">
+						<div class="footer-img">
+							<img src="images/logo.png" alt="">
+						</div>	
+					</div>
+					<div class="sixteen columns">			
+						<div class="social-footer">
+							<ul class="list-social">
+								<li class="icon-soc tipped" data-title="twitter"  data-tipper-options='{"direction":"top","follow":"true","margin":30}'>
+									<a href="#">&#xf099;</a>
+								</li>
+								<li class="icon-soc tipped" data-title="github"  data-tipper-options='{"direction":"top","follow":"true","margin":30}'>
+									<a href="#">&#xf09b;</a>
+								</li>
+								<li class="icon-soc tipped" data-title="google +"  data-tipper-options='{"direction":"top","follow":"true","margin":30}'>
+									<a href="#">&#xf0d5;</a>
+								</li>
+							</ul>	
+						</div>
+					</div>		
+					<div class="sixteen columns">
+						<div class="footer-copy-text">
+							<p>© We are Selene. All rights reserved. 2015</p>
+							<p>Made by IG Design, Serbia</p>
+						</div>	
+					</div>
+				</div>						
+			</div>
+			
+		</section> <!-- .cd-section -->
+	</main>
+	
+	<nav class="cd-nav-container" id="cd-nav">
+		<header>
+			<a href="#0" class="cd-close-nav">Close</a>
+		</header>
+
+		<ul class="cd-nav">
+			<li data-menu="index">
+				<a href="index.html" class="animsition-link" data-animsition-out="fade-out-right-delay">
+					<span>&#xf447;</span>
+
+					<em>Home</em>
+				</a>
+			</li>
+
+			<li data-menu="projects">
+				<a href="projects.html" class="animsition-link" data-animsition-out="fade-out-right-delay">
+					<span>&#xf3ed;</span>
+
+					<em>Projects</em>
+				</a>
+			</li>
+
+			<li data-menu="about">
+				<a href="about.html" class="animsition-link" data-animsition-out="fade-out-right-delay">
+					<span>&#xf453;</span>
+
+					<em>About</em>
+				</a>
+			</li>
+
+			<li data-menu="services">
+				<a href="services.html" class="animsition-link" data-animsition-out="fade-out-right-delay">
+					<span>&#xf4a7;</span>
+
+					<em>Services</em>
+				</a>
+			</li>
+
+			<li data-menu="blog">
+				<a href="blog.html" class="animsition-link" data-animsition-out="fade-out-right-delay">
+					<span>&#xf3f9;</span>
+
+					<em>blog</em>
+				</a>
+			</li>
+			<li class="cd-selected" data-menu="contact">
+				<a href="#">
+					<span>&#xf422;</span>
+
+					<em>Contact</em>
+				</a>
+			</li>
+		</ul> <!-- .cd-3d-nav -->
+	</nav>
+
+	<div class="cd-overlay"><!-- shadow layer visible when navigation is visible --></div>
+
+</div>	
+
+	<div class="scroll-to-top"></div>
+	
+<script type="text/javascript" src="js/jquery-2.1.1.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
+<script type="text/javascript" src="js/scroll.js"></script>
+<script type="text/javascript"> 
+(function($) { "use strict";          
+			jQuery(document).ready(function() {
+				var offset = 350;
+				var duration = 500;
+				jQuery(window).scroll(function() {
+					if (jQuery(this).scrollTop() > offset) {
+						jQuery('.scroll-to-top').fadeIn(duration);
+					} else {
+						jQuery('.scroll-to-top').fadeOut(duration);
+					}
+				});
+				
+				jQuery('.scroll-to-top').click(function(event) {
+					event.preventDefault();
+					jQuery('html, body').animate({scrollTop: 0}, duration);
+					return false;
+				})
+			});
+})(jQuery);
+</script>
+<script type="text/javascript" src="js/classie.js"></script>
+<script type="text/javascript" src="js/cbpAnimatedHeader.min.js"></script>
+<script type="text/javascript" src="js/jquery.fs.tipper.min.js"></script> 
+<script type="text/javascript" src="js/jquery.animsition.min.js"></script>
+<script type="text/javascript">
+(function($) { "use strict";
+	$(document).ready(function() {
+	  
+	  $(".animsition").animsition({
+	  
+		inClass               :   'fade-in-right',
+		outClass              :   'fade-out-right',
+		inDuration            :    600,
+		outDuration           :    600,
+		linkElement           :   '.animsition-link',
+		// e.g. linkElement   :   'a:not([target="_blank"]):not([href^=#])'
+		loading               :    true,
+		loadingParentElement  :   'body', //animsition wrapper element
+		loadingClass          :   'animsition-loading',
+		unSupportCss          : [ 'animation-duration',
+								  '-webkit-animation-duration',
+								  '-o-animation-duration'
+								],
+		//"unSupportCss" option allows you to disable the "animsition" in case the css property in the array is not supported by your browser.
+		//The default setting is to disable the "animsition" in a browser that does not support "animation-duration".
+		
+		overlay               :   false,
+		
+		overlayClass          :   'animsition-overlay-slide',
+		overlayParentElement  :   'body'
+	  });
+	  
+	});
+})(jQuery);
+</script>
+<script type="text/javascript" src="js/jquery.chaffle.min.js"></script>
+<script type="text/javascript">
+(function($) { "use strict";
+	$(document).ready(function() {
+	  $('.chaffle').chaffle({
+		speed: 15,
+		time: 100
+	  });
+	}); 
+})(jQuery);
+</script>
+<script type="text/javascript" src="js/scrollReveal.js"></script>
+<script type="text/javascript">
+(function($) { "use strict";
+      window.scrollReveal = new scrollReveal();
+})(jQuery);
+</script>
+<script type="text/javascript" src="js/jquery.parallax-1.1.3.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvpnlHRidMIU374bKM5-sx8ruc01OvDjI"></script>
+	<!-- ==================
+		Go to this link to activated your google map API KEY https://developers.google.com/maps/documentation/javascript/tutorial#api_key 
+		your key replace in script link for google map after .../maps/api/js?key=HERE_YOUR_API_KEY
+		coordinates for map you can change in custom-contact.js file 
+	================== -->	
+<script type="text/javascript" src="js/contact.js"></script>	
+<script type="text/javascript" src="js/custom-contact.js"></script>
+</body>
+</html>
